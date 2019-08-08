@@ -1,0 +1,30 @@
+// This styles the paragraphs and other textual elements of the site not including the titles which are in _title.scss
+@import './_base.scss';
+p {
+  padding: 0;
+  margin: 0 0 1.45rem;
+}
+figure {
+  padding: 0;
+  margin: 0 0 1.45rem;
+}
+blockquote {
+  padding: 0;
+  margin: 0 1.45rem 1.45rem;
+}
+b {
+  font-weight: bold;
+}
+strong {
+  font-weight: bold;
+}
+
+code {
+  font-size: 0.85rem;
+  line-height: 1.45rem;
+  background-color: $black !important;
+  color:$white;
+  border-radius: 3px;
+  font-family: "SauceCodePro Nerd Font", "Space Mono", monospace;
+  padding: 2rem;
+}

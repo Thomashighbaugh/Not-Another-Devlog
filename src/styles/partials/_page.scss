@@ -1,0 +1,28 @@
+//this styles the pages on the site and includes some things that might technically belong elsewhere but effect page styles
+@import './base.scss';
+
+p, .title {
+  font-family: $font;
+}
+
+.index-main {
+  display: grid;
+  margin-left:2rem;
+  grid-template-columns: 2fr 3fr;
+  background:$secondary-light;
+}
+
+.sidebar {
+  width: 90%;
+}
+
+
+
+@media only screen and (max-width: 850px) {
+  .sidebar{display: none;}
+  .index-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

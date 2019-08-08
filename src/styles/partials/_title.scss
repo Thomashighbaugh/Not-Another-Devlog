@@ -1,0 +1,31 @@
+//This styles the heading elements used in the site generally. Other partials may contain styling for their specific headings
+@import "./_base.scss";
+h1 {
+  font-size: 4rem;
+  @extend %title;
+}
+h2 {
+  font-size: 1.62671rem;
+  @extend %title;
+}
+h3 {
+  font-size: 1.38316rem;
+  @extend %title;
+}
+h4 {
+  font-size: 1rem;
+
+  @extend %title;
+}
+h5 {
+  @extend %title;
+  font-size: 0.85028rem;
+}
+h6 {
+  font-size: 0.78405rem;
+
+  @extend %title;
+}
+hgroup {
+  @extend %title;
+}

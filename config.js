@@ -1,0 +1,106 @@
+"use strict"
+
+module.exports = {
+  url: "https://developer-diary.netlify.com",
+  title: "Not Another Devlog?!",
+  tagline: "Honest Opinions From An Autodidactic Web Developer",
+  copyright: '© 2019 [TLH], All rights reserved',
+  author: {
+    name: "[T L H]",
+    bio: "Autodidactic Web Developer & Linux Madman",
+    contacts: {
+      linkedin: "https://www.linkedin.com/in/thomas-leon-highbaugh",
+      github: "https://github.com/Thomashiughbaugh",
+      twitter: "https://twitter.com/thomashighbaugh",
+      portfolio: "https://thomasleonhighbaugh.me",
+      gallery:"https://netlify.com",
+      dribbble:"https://dribbble.com/thighbaugh"
+    },
+  },
+  labels: [
+    {
+      tag: "react",
+      tech: "React",
+      name: "DiReact",
+      size: 20,
+      color: "deepskyblue",
+    },
+    {
+      tag: "nodejs",
+      tech: "Node.js",
+      name: "DiNodejsSmall",
+      size: 20,
+      color: "lightgreen",
+    },
+    {
+      tag: "git",
+      tech: "Git",
+      name: "DiGitMerge",
+      size: 20,
+      color: "white",
+    },
+    {
+      tag: "javascript",
+      tech: "JavaScript",
+      name: "DiJsBadge",
+      size: 20,
+      color: "yellow",
+    },
+    {
+      tag: "css",
+      tech: "CSS",
+      name: "DiCss3Full",
+      size: 20,
+      color: "lightblue",
+    },
+    {
+      tag: "python",
+      tech: "Python",
+      name: "DiPython",
+      size: 20,
+      color: "yellow",
+    },
+    {
+      tag: "ruby",
+      tech: "Ruby",
+      name: "DiRuby",
+      size: 20,
+      color: "crimson",
+    },
+    {
+      tag: "gatsby",
+      tech: "Gatsby",
+      name: "DiJekyllSmall",
+      size: 20,
+      color: "purple",
+    },
+    {
+      tag: "html",
+      tech: "HTML",
+      name: "FaHtml5",
+      size: 20,
+      color: "darkorange",
+    },
+    {
+      tag: "php",
+      tech: "php",
+      name: "DiPhp",
+      size: 20,
+      color: "violet",
+    },
+    {
+      tag: "linux",
+      tech: "Linux",
+      name: "DiLinux",
+      size: 20,
+      color: "white",
+    },
+    {
+      tag: "spacemacs",
+      tech: "SpaceMacs",
+      name: "DiVim",
+      size: 20,
+      color: "purple",
+    },
+  ],
+}

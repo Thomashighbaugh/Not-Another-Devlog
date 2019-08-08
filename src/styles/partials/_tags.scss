@@ -1,0 +1,13 @@
+//used for the Tags that are all over the site and function as topical Tags relating to various technologies
+@import "./_base.scss";
+h4 {
+  font-family: $font;
+}
+
+.tech-tag {
+  background: $secondary-light;
+  border-radius: 0;
+  border: 0.25rem solid $secondary;
+  font-family: $font;
+  font-size: .85rem;
+}
