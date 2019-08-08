@@ -1,6 +1,6 @@
 import React from "react"
 
-import willjw3 from "../../images/willjw3.jpg"
+import willjw3 from "../../../images/willjw3.jpg"
 
 const Bio = ({ author, tagline }) => {
 

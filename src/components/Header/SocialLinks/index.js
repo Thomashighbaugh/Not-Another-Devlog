@@ -6,7 +6,7 @@ import {
 import { Link } from 'gatsby'
 
 
-const SocialLinks = ({ contacts }) => {
+const Index = ({ contacts }) => {
     return (
         <div className="social-links float-right mr-4">
             <a className="text-primary ml-4"
@@ -25,4 +25,4 @@ const SocialLinks = ({ contacts }) => {
     )
 }
 
-export default SocialLinks
+export default Index

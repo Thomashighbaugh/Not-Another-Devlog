@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 
-import Sidebar from "../components/sidebar/Sidebar"
+import Sidebar from "../components/Sidebar"
 import TechTag from "../components/Tags/TechTag"
 import Index from "../components/ShareBlock"
 

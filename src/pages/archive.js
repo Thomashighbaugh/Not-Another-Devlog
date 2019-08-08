@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.css"
 
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
-import Sidebar from "../components/sidebar/Sidebar"
+import Sidebar from "../components/Sidebar"
 import TechTag from "../components/Tags/TechTag"
 
 const ArchivePage = ({ data }) => {

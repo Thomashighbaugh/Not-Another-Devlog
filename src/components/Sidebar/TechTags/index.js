@@ -1,6 +1,6 @@
 import React from "react"
 
-import TechTag from "../Tags/TechTag"
+import TechTag from "../../Tags/TechTag"
 
 const TechTags = (props) => {
     const labels = props.labels

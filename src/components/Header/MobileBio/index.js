@@ -1,6 +1,6 @@
 import React from "react"
 
-import me from "../../images/me.png"
+import me from "../../../images/me.png"
 
 const MobileBio = (props) => {
 
