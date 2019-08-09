@@ -1,11 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 
 import Sidebar from "../components/Sidebar"
 import TechTag from "../components/Tags/TechTag"
-import Index from "../components/ShareBlock"
+import ShareBlock from "../components/ShareBlock"
+import Layout from "../components/Layout"
 
 const BlogPost = props => {
   const post = props.data.markdownRemark
@@ -37,7 +37,7 @@ const BlogPost = props => {
   }
 
   return (
-    <Index>
+    <Layout>
       <SEO title={post.frontmatter.title} />
       <div className="post-page-main">
         <div className="sidebar px-4 py-2">
@@ -54,7 +54,7 @@ const BlogPost = props => {
               <i>Published on </i> {post.frontmatter.date}
             </small>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
-            <Index
+            <ShareBlock
               title={post.frontmatter.title}
               siteName={siteName}
               url={url}
@@ -62,7 +62,7 @@ const BlogPost = props => {
           </div>
         </div>
       </div>
-    </Index>
+    </Layout>
   )
 }
 

@@ -1,12 +1,11 @@
 import React from "react"
-import me from "../../images/me.png"
 
 
 const Footer = ({ author, tagline }) => {
 
 return (
 
-  <footer className="text-center w-100 ">
+  <footer className="nav-fill">
     <hr />
     <p className="d-inline">
       © {new Date().getFullYear()}{" "}
