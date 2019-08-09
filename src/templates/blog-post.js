@@ -37,7 +37,7 @@ const BlogPost = props => {
   }
 
   return (
-    <Layout>
+    <Index>
       <SEO title={post.frontmatter.title} />
       <div className="post-page-main">
         <div className="sidebar px-4 py-2">
@@ -62,7 +62,7 @@ const BlogPost = props => {
           </div>
         </div>
       </div>
-    </Layout>
+    </Index>
   )
 }
 

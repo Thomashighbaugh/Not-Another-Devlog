@@ -1,10 +1,10 @@
 import React from "react"
 
-import Layout from "../components/Layout"
+import Index from "../components/Layout"
 import SEO from "../components/SEO"
 
 const NotFoundPage = () => (
-  <Layout>
+  <Index>
     <div className="404 container mt-5 p-3 bg-dark ">
     <SEO title="404: Not found" />
     <h1>Error 404</h1>
@@ -14,7 +14,7 @@ const NotFoundPage = () => (
     <h3>Thomas Leon Highbaugh (thighbaugh@zoho.com)</h3>
     </div>
     </div>
-    </Layout>
+    </Index>
 )
 
 export default NotFoundPage

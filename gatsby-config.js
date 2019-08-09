@@ -53,13 +53,13 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`, //this nifty plugin in saves from needing to import the fonts manually in the SASS files
       options: {
         fonts: [
           `Source Code Pro\:500`,
           `Major Mono Display`,
           `VT323`,
-          `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+          `source sans pro\:300,400,400i,700`
         ]
       }
     },
@@ -79,7 +79,7 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+     `gatsby-plugin-offline`,
     `gatsby-plugin-sass`,
   ],
 }

@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import "bootstrap/dist/css/bootstrap.css"
 
-import Layout from "../components/Layout"
+import Index from "../components/Layout"
 import SEO from "../components/SEO"
 import Sidebar from "../components/Sidebar"
 import TechTag from "../components/Tags/TechTag"
@@ -25,7 +25,7 @@ const ArchivePage = ({ data }) => {
 
 
     return (
-        <Layout>
+        <Index>
             <SEO title="Archive" keywords={[`gatsby`, `javascript`, `react`, `web development`, `blog`, `graphql`]} />
             <div className="index-main">
                 <div className="sidebar px-4 py-2">
@@ -60,7 +60,7 @@ const ArchivePage = ({ data }) => {
                     })}
                 </div>
             </div>
-        </Layout>
+        </Index>
     )
 }
 

@@ -4,7 +4,7 @@ import React from "react";
 import { FaTwitter, FaLinkedin, FaFacebook, FaEnvelope } from "react-icons/fa";
 import { ShareBlockStandard, ShareButtonIconOnly } from "react-custom-share";
 
-const Index = props => {
+const ShareBlock = props => {
     const { url, title, siteName } = props;
 
     const shareBlockProps = {
@@ -27,17 +27,17 @@ const Index = props => {
     )
 };
 
-Index.propTypes = {
+ShareBlock.propTypes = {
     url: PropTypes.string,
     title: PropTypes.string,
     siteName: PropTypes.string
 };
 
-Index.defaultProps = {
+ShareBlock.defaultProps = {
     url: "https://mywebsite.com/page-to-share/",
     title: "Default value of title",
     siteName: "Default value of excerpt"
 };
 
-export default Index;
+export default ShareBlock;
 

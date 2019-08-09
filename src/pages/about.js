@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../components/Layout"
+import Index from "../components/Layout"
 import SEO from "../components/SEO"
 import { FaCheckCircle } from "react-icons/fa"
 
@@ -8,7 +8,7 @@ import TechTag from "../components/Tags/TechTag"
 
 const AboutPage = (props) => {
     return (
-        <Layout>
+        <Index>
             <SEO title="About" />
             <div className="post-page-main">
                 <div className="sidebar px-4 py-2">
@@ -61,7 +61,7 @@ const AboutPage = (props) => {
                     </div>
                 </div>
             </div>
-        </Layout>
+        </Index>
     )
 }
 

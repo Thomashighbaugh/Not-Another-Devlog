@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { Link, graphql } from "gatsby"
 import "bootstrap/dist/css/bootstrap.css"
 
-import Layout from "../components/Layout"
+import Index from "../components/Layout"
 import SEO from "../components/SEO"
 import Sidebar from "../components/Sidebar"
 import TechTag from "../components/Tags/TechTag"
@@ -31,7 +31,7 @@ const Tag = ({ pageContext, data }) => {
     }
 
     return (
-        <Layout>
+        <Index>
             <SEO title="Home" keywords={[`gatsby`, `javascript`, `react`, `web development`, `node.js`, `graphql`]} />
             <div className="index-main">
                 <div className="sidebar px-4 py-2">
@@ -67,7 +67,7 @@ const Tag = ({ pageContext, data }) => {
                     })}
                 </div>
             </div>
-        </Layout>
+        </Index>
     )
 }
 
