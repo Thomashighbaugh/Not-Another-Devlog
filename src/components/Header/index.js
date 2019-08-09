@@ -5,7 +5,7 @@ import PropTypes from "prop-types"
 
 import MobileSocialLinks from "../MobileSocialLinks/MobileSocialLinks"
 import MobilePageLinks from "./MobilePageLinks"
-import Index from "./SocialLinks"
+import SocialLinks from "./SocialLinks"
 import MobileBio from "./MobileBio"
 
 const Header = ({ siteTitle, tagline, author, contacts }) => {
@@ -27,7 +27,7 @@ const Header = ({ siteTitle, tagline, author, contacts }) => {
             {siteTitle}
           </Link>
         </h1>
-        <Index contacts={contacts} />
+        <SocialLinks contacts={contacts} />
       </div>
       <MobileSocialLinks contacts={contacts} />
       <MobilePageLinks />

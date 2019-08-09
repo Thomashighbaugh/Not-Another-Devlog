@@ -23,7 +23,6 @@ exports.createPages = ({ graphql, actions }) => {
           node {
             frontmatter {
               tags
-              cover
             }
             fields {
               slug
