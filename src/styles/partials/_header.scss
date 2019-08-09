@@ -5,6 +5,7 @@
 // Styling for the Header element
 header{
   background: $header-background;
+  border-bottom: 1rem solid $primary-light;
 }
 .head-main {
   width: 100%;
