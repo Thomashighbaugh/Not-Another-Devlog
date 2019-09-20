@@ -2,7 +2,7 @@
 title: "Down Into the Dotfile Rabbithole"
 tags: ["linux""]
 published: true
-date: "2019-07-20"
+date: "2019-09-05"
 ---
 I have spent the last two years going from experimenting with Linux on virtual machines 
 to old laptops and for the last year and half have used Linux exclusively for all of my
