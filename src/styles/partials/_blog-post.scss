@@ -6,10 +6,10 @@
   margin:0;
   padding:0;
   float:left;
-  display: grid;
-  grid-template-columns: 2fr 5fr;
+  display: inline-block;
+  width:20%;
 }
-  display: grid;
+  display: block;
   grid-template-columns: 2fr 10fr;
   background: $secondary-light;
 padding: 1rem;
