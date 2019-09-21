@@ -1,47 +1,47 @@
 //this file Styles the posts on the index page
 @import "./_base.scss";
 @import "./_codeblock.scss";
-  .info {
-    padding-bottom: 1.3rem;
-    border: 0.125rem solid $gray-200;
-    display: inline-block;
-    margin:0;
+.info {
+  padding-bottom: 1.3rem;
+  border: 0.125rem solid $gray-200;
+  display: inline-block;
+  margin: 0;
 
-    h2 {
-      letter-spacing: -0.5px;
-    }
-
-    time {
-      color: $gray-500;
-      display: inline;
-      margin-right: 10px;
-    }
+  h2 {
+    letter-spacing: -0.5px;
   }
-.post-page-main{
-display: inline-flex;
+
+  time {
+    color: $gray-500;
+    display: inline;
+    margin-right: 10px;
+  }
+}
+.post-page-main {
+  display: inline-flex;
   flex-direction: row;
   background: $secondary;
   padding: 2rem;
   border: $primary solid 0.25rem;
-  .post-main{
-    margin-left: 10%;
-    margin-right: 10%;
-
+  .sidebar {
+    margin-right: 8%;
+    img {
+      margin: 15%;
+    }
   }
 }
-  .content {
-    background: $secondary-light;
-    padding-bottom: 10px;
-    h2 {
-      padding-top: 1rem;
-      margin-bottom: 2rem;
-    }
-
-    blockquote {
-      a {
-        display: block;
-        word-break: break-word;
-      }
-    }
+.content {
+  background: $secondary-light;
+  padding-bottom: 10px;
+  h2 {
+    padding-top: 1rem;
+    margin-bottom: 2rem;
   }
 
+  blockquote {
+    a {
+      display: block;
+      word-break: break-word;
+    }
+  }
+}

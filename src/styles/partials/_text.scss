@@ -1,5 +1,5 @@
 // This styles the paragraphs and other textual elements of the site not including the titles which are in _title.scss
-@import './_base.scss';
+@import "./_base.scss";
 p {
   padding: 0;
   margin: 0 0 1.45rem;
@@ -23,24 +23,25 @@ table {
   border: $white 0.25rem solid;
 }
 
-th{
+th {
   background: $primary;
-border: $white 0.25rem solid;
+  border: $white 0.25rem solid;
 }
-td{
+td {
   background: $gray-900;
   border: $primary solid 0.125rem !important;
-
 }
 
-table, th, td{
+table,
+th,
+td {
   padding: 0.25rem;
 }
 
-blockquote{
+blockquote {
   color: $primary !important;
-  font-family: 'Space Mono', monospace;
-margin-top: 5rem !important;
+  font-family: "Space Mono", monospace;
+  margin-top: 5rem !important;
   padding: 3%;
   border-left: 0.25rem solid $gray-600;
   border-right: 0.25rem solid $gray-600;

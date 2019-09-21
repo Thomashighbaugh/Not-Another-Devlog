@@ -10,14 +10,13 @@ header {
   position: relative;
   display: inline-block;
   background: $secondary;
-  .header-title{
+  .header-title {
     font-size: 2.4rem;
   }
-    .head-elements {
-      top: 0;
-      display: inline-block;
-
-    }
+  .head-elements {
+    top: 0;
+    display: inline-block;
+  }
   .mobile-pages-main {
     width: 100%;
     background: white;

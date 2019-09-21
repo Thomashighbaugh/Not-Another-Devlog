@@ -13,22 +13,17 @@ nav,
 section,
 summary {
   display: block;
-
 }
-body{
+body {
   background: $background !important;
-  color:$white;
-
+  color: $white;
 }
 hr {
   box-sizing: content-box;
   background: $primary-light;
   border: 1rem solid $primary-light;
 }
-.body{
+.body {
   color: $white;
   box-sizing: content-box;
-
 }
-
-

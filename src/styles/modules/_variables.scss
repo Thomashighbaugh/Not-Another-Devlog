@@ -2,8 +2,8 @@
 //unlike the specific styling to be found in _partials,
 // all variables are included and sectioned according to component below
 
-@import url('https://fonts.googleapis.com/css?family=Dokdo|Overpass+Mono|Permanent+Marker|Rock+Salt|Share+Tech+Mono|Space+Mono|VT323&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Aldrich&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Dokdo|Overpass+Mono|Permanent+Marker|Rock+Salt|Share+Tech+Mono|Space+Mono|VT323&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Aldrich&display=swap");
 
 // Monochrome Colors
 $white: #fff !default;
@@ -18,7 +18,7 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #000 !default;
 // Colors
-$blue:  #67cdcc !default;
+$blue: #67cdcc !default;
 $indigo: #3f51bf !default;
 $purple: #9063ec !default;
 $pink: #cc99cd !default;
@@ -29,9 +29,9 @@ $green: #7ec699 !default;
 $teal: #009688 !default;
 $cyan: #00bcd4 !default;
 $primary: $purple;
-$secondary: #343A40;
+$secondary: #343a40;
 $primary-light: #9063ec;
-$secondary-light: #343A40;
+$secondary-light: #343a40;
 
 // Backgrounds
 $background: #343a40
@@ -46,14 +46,11 @@ $gradient: linear-gradient(
   $primary 75%
 );
 
-
 // Font
-$font: 'Aldrich', 'Share Tech Mono', 'VT323', 'Overpass Mono', 'Space Mono',
+$font: "Aldrich", "Share Tech Mono", "VT323", "Overpass Mono", "Space Mono",
   monospace;
-$title-font: 'VT323', 'Major Mono Display',  monospace;
-$font-family-monospace: "Space Mono",  monospace !default;
-
-
+$title-font: "VT323", "Major Mono Display", monospace;
+$font-family-monospace: "Space Mono", monospace !default;
 
 // Headings
 
@@ -63,7 +60,6 @@ $h3-font-size: 1.2rem !default;
 $h4-font-size: 1.1rem !default;
 $h5-font-size: 1.05rem !default;
 $h6-font-size: 1rem !default;
-
 
 //Display Sizing
 $display1-size: 6rem !default;

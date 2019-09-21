@@ -40,23 +40,23 @@ const BlogPost = props => {
     <Layout>
       <SEO title={post.frontmatter.title} />
       <div className="post-page-main">
-          <Sidebar/>
-          <div className="post-main">
-            <small>
-              <h1>{post.frontmatter.title}</h1>
+        <Sidebar />
+        <div className="post-main">
+          <small>
+            <h1>{post.frontmatter.title}</h1>
             <SEO title={post.frontmatter.title} />
-          <div className="d-block">{getTechTags(tags)}</div>
-          <i>Published on </i> {post.frontmatter.date}
+            <div className="d-block">{getTechTags(tags)}</div>
+            <i>Published on </i> {post.frontmatter.date}
           </small>
-          <br/>
-            <div dangerouslySetInnerHTML={{ __html: post.html }} />
-            <ShareBlock
-              title={post.frontmatter.title}
-              siteName={siteName}
-              url={url}
-            />
-          </div>
+          <br />
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+          <ShareBlock
+            title={post.frontmatter.title}
+            siteName={siteName}
+            url={url}
+          />
         </div>
+      </div>
     </Layout>
   )
 }
@@ -82,11 +82,9 @@ export const query = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         tags
-    
       }
     }
   }
 `
-
 
 export default BlogPost

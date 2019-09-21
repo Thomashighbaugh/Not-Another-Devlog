@@ -5,14 +5,14 @@ h1 {
   @extend %title;
   border-bottom: 0.5rem solid $primary;
   border-top: 0.5rem solid $primary;
-  padding:1rem;
-  margin-top:2rem;
+  padding: 1rem;
+  margin-top: 2rem;
 }
 h2 {
   font-size: 4rem;
   border-bottom: $primary 0.25rem solid;
   margin-top: 2rem;
-  margin-bottom:2rem;
+  margin-bottom: 2rem;
   @extend %title;
 }
 h3 {

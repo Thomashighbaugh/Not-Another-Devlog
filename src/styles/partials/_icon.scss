@@ -9,11 +9,11 @@
     font-size: $display4-size;
     margin-bottom: 20px;
 
-    &[data-emergence='visible'] {
+    &[data-emergence="visible"] {
       opacity: 1;
     }
 
-    &[data-emergence='hidden'] {
+    &[data-emergence="hidden"] {
       opacity: 0;
     }
   }

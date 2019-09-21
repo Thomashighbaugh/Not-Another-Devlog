@@ -73,7 +73,7 @@ function SEO({ description, lang, meta, title }) {
 
 SEO.defaultProps = {
   lang: `en`,
-  meta: [ ],
+  meta: [],
   description: `A developer blog by Thomas Leon Highbaugh about web development and using Linux as a daily OS`,
 }
 

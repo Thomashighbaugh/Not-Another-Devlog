@@ -1,9 +1,8 @@
 @import "./base.scss";
 
-
 .index-main {
   display: inline-flex;
-width: 100%;
+  width: 100%;
   border: 1rem double $primary;
   background: $secondary-light;
   flex-direction: row;
@@ -11,7 +10,7 @@ width: 100%;
   color: $white;
   align-content: space-around;
   margin: 0;
-  padding:0;
+  padding: 0;
 }
 
 @media only screen and (max-width: 850px) {

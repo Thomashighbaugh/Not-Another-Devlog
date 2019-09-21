@@ -3,7 +3,10 @@
 @import "./_base.scss";
 
 .sidebar {
-  .page-links {
+  hr {
+    height: 0.5rem;
+  }
+  .links {
     margin-top: 3rem;
     padding-top: 4rem;
   }
@@ -14,6 +17,7 @@
   }
 
   .author-bio {
-    font-size: 2vw;
+    font-family: "VT323", monospace;
+    font-size: 2rem;
   }
 }

@@ -32,8 +32,8 @@ const Layout = ({ children }) => {
             author={data.site.siteMetadata.author}
             contacts={data.site.siteMetadata.contacts}
           />
-            <main className="p-4">{children}</main>
-            <Footer />
+          <main className="p-4">{children}</main>
+          <Footer />
         </div>
       )}
     />

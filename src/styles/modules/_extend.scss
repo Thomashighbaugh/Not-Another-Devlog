@@ -1,7 +1,7 @@
 // This file creates the Templates called in the other scss files
 // These Templates enable styling Components in a consistent manner
 
-@import 'variables';
+@import "variables";
 
 %button {
   border: $secondary-light 0.125rem solid;
@@ -17,21 +17,20 @@
   background: $secondary;
   color: $white;
 }
-%title{
+%title {
   color: $primary-light !important;
   font-family: $font;
   font-weight: 900;
   text-rendering: optimizeLegibility;
   text-align: center;
-
-
 }
-%link{
-  color:$primary-light !important;
+%link {
+  color: $primary-light !important;
+  background: $secondary !important;
 }
 
-%link0{
-  color:$secondary-light !important;
+%link0 {
+  color: $secondary-light !important;
   background: $primary-light !important;
   height: inherit;
 }
