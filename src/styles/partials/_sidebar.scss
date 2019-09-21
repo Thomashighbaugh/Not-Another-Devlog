@@ -6,9 +6,22 @@
   hr {
     height: 0.5rem;
   }
-  .links {
-    margin-top: 3rem;
+  .side-social-links{
+    hr{
+margin-right: 2.7rem;
+    }
+  }
+  button{
     padding-top: 4rem;
+    width: 70%;
+    @extend %button;
+    background: $primary !important;
+    color: $secondary !important;
+    margin-top: 0.1rem;
+  }
+  button:hover{
+    background: $secondary !important;
+    color:$primary !important;
   }
 
   .profile-img {

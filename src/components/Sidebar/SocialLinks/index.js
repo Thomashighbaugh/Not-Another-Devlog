@@ -8,27 +8,28 @@ import {
 
 const SocialLinks = ({ contacts }) => {
   return (
-    <div className="side-social-links float-left mt-3 mb-3">
-      <a className="text-secondary p-2" href={contacts.linkedin}>
+    <div className="side-social-links float-left">
+      <button className="text-secondary p-2" href={contacts.linkedin}>
         <span title="Linked In">
           <FaLinkedin size={26} style={{ color: "secondary" }} />
         </span>
-      </a>
-      <a className="text-secondary p-2" href={contacts.github}>
+      </button>
+      <button className="text-secondary p-2" href={contacts.github}>
         <span title="GitHub">
           <FaGithubSquare size={26} style={{ color: "secondary" }} />
         </span>
-      </a>
-      <a className="text-secondary p-2" href={contacts.dribbble}>
+      </button>
+      <button className="text-secondary p-2" href={contacts.dribbble}>
         <span title="freeCodeCamp">
           <FaDribbble size={26} style={{ color: "secondary" }} />
         </span>
-      </a>
-      <a className="text-secondary p-2" href={contacts.twitter}>
+      </button>
+      <button className="text-secondary p-2" href={contacts.twitter}>
         <span title="Twitter">
           <FaTwitterSquare size={26} style={{ color: "secondary" }} />
         </span>
-      </a>
+      </button>
+      <hr  />
     </div>
   )
 }
