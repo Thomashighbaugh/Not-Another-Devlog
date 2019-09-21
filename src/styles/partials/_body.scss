@@ -1,5 +1,4 @@
 //This is for general styles and styles applied globally to the body
-
 @import "_base.scss";
 article,
 aside,
@@ -14,18 +13,22 @@ nav,
 section,
 summary {
   display: block;
+
 }
 body{
   background: $background !important;
-  color:$white !important;
+  color:$white;
+
 }
 hr {
   box-sizing: content-box;
   background: $primary-light;
   border: 1rem solid $primary-light;
+}
+.body{
+  color: $white;
+  box-sizing: content-box;
 
 }
-
-
 
 

@@ -12,9 +12,7 @@ this React framework (React being a library apparently). This post will detail t
 far better portfolio pieces than using WebPack without this framework would have been.
 
 ![3](./3.png)
-#The Great Gatsby
-### How Gatsby Helped Me to Build Better, More Featureful Sites for My Portfolio
-
+## Introduction 
 The Great Gatsby was one of the books that defined my late teens and early twenties. Not because I took much from the
 brevity it was written with, obviously, but because it contained two kernels (see what I did there) of wisdom that I
 internalized fully. The first was the advise of the narrator's father to not judge others because one cannot tell what

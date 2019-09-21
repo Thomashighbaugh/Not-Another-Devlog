@@ -51,7 +51,7 @@ const IndexPage = ({ data }) => {
                   to={post.node.fields.slug}
                   className="text-primary"
                 >
-                  <small className="d-inline-block ml-3"> Read full post</small>
+                  <small className="d-block ml-3"> Read full post</small>
                 </Link>
                 <div className="d-block">
                   {getTechTags(tags)}
@@ -60,7 +60,7 @@ const IndexPage = ({ data }) => {
             )
           })}
           <div className="mt-4 text-center">
-            <Link to={nextPage} rel="next" style={{ textDecoration: `none` }}>
+            <Link to={nextPage} rel="next">
               <span className="text-dark">Next Page →</span>
             </Link>
           </div>

@@ -1,23 +1,14 @@
 //this file Styles the posts on the index page
 @import "./_base.scss";
 @import "./_codeblock.scss";
-.article {
-  padding-top: 10rem;
-  padding-bottom: 10px;
-  max-width: 80rem;
-  background-color: $secondary-light !important;
-
   .info {
     padding-bottom: 1.3rem;
     border: 0.125rem solid $gray-200;
-    word-break: break-word;
+    display: inline-block;
+    margin:0;
 
-    h1 {
+    h2 {
       letter-spacing: -0.5px;
-    }
-
-    .badge {
-      margin-right: 3px;
     }
 
     time {
@@ -26,25 +17,30 @@
       margin-right: 10px;
     }
   }
+.post-page-main{
+display: inline-flex;
+  flex-direction: row;
+  background: $secondary;
+  padding: 2rem;
+  border: $primary solid 0.25rem;
+  .post-main{
+    margin-left: 10%;
 
+  }
+}
   .content {
     background: $secondary-light;
     padding-bottom: 10px;
     h2 {
-      padding-top: 10px;
-      margin-bottom: 20px;
+      padding-top: 1rem;
+      margin-bottom: 2rem;
     }
 
-
-
     blockquote {
-      background-color: $secondary-light !important;
-      border-left: 5px solid $secondary !important;
-
       a {
         display: block;
         word-break: break-word;
       }
     }
   }
-}
+

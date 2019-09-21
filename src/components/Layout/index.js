@@ -1,10 +1,3 @@
-/**
- * Index component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
@@ -33,23 +26,14 @@ const Layout = ({ children }) => {
         }
       `}
       render={data => (
-        <div>
+        <div className="body">
           <Header
             siteTitle={data.site.siteMetadata.title}
-            tagline={data.site.siteMetadata.tagline}
             author={data.site.siteMetadata.author}
             contacts={data.site.siteMetadata.contacts}
           />
-          <div
-            style={{
-              margin: `0 auto`,
-              padding: `0px 1.0875rem 1.45rem`,
-              paddingTop: 0,
-            }}
-          >
             <main className="p-4">{children}</main>
             <Footer />
-          </div>
         </div>
       )}
     />

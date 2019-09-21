@@ -5,8 +5,8 @@ const Footer = ({ author, tagline }) => {
 
 return (
 
-  <footer className="nav-fill">
-    <hr />
+  <footer className="col-12 text-center ml-0 mr-o p-0">
+    <div className="navbar-text">
     <p className="d-inline">
       © {new Date().getFullYear()}{" "}
       <a className="text-info" href="https://thomasleonhighbaugh.me">
@@ -14,6 +14,7 @@ return (
       </a>
       , All Rights Reserved.
     </p>
+    </div>
     <p className="mt-5 text-muted d-inline">
       <i className="d-block">
         {" "}

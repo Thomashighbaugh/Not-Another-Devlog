@@ -1,5 +1,8 @@
 @import "_base.scss";
 
-.404{
-background: $secondary-light;
+.404 {
+background: $secondary !important;
+color: $white;
+border: 1rem $purple 1rem;
+
 }

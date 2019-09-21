@@ -1,16 +1,16 @@
 //this file is for the styling of links on the site
 
-@import './base.scss';
+@import "./base.scss";
 
-a{
+a {
   @extend %link;
 }
-a:visited{
+a:visited {
   @extend %link;
 }
-a:active{
+a:active {
   @extend %link;
 }
-a:hover{
+a:hover {
   @extend %link0;
 }

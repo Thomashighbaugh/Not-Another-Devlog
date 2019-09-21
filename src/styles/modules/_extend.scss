@@ -6,27 +6,24 @@
 %button {
   border: $secondary-light 0.125rem solid;
   margin-left: 0.5rem;
-  background: $gradient;
 }
 %button0 {
   border: $secondary-light 0.125rem solid;
   margin-left: 1rem;
   padding: 0.5rem;
-  background: $gradient0;
+  background: $gradient;
 }
 %article {
   background: $secondary;
   color: $white;
 }
 %title{
-
-  padding: 0;
-  margin: 0 0 1.45rem;
   color: $primary-light !important;
   font-family: $font;
-  font-weight: bold;
+  font-weight: 900;
   text-rendering: optimizeLegibility;
-  line-height: 1.1;
+  text-align: center;
+
 
 }
 %link{
@@ -34,6 +31,7 @@
 }
 
 %link0{
-  color:$secondary-light;
-  background: $primary-light;
+  color:$secondary-light !important;
+  background: $primary-light !important;
+  height: inherit;
 }

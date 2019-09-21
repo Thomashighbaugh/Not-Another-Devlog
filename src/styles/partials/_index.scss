@@ -1,0 +1,23 @@
+@import "./base.scss";
+
+
+.index-main {
+  display: inline-flex;
+width: 100%;
+  border: 1rem double $primary;
+  background: $secondary-light;
+  flex-direction: row;
+  justify-content: space-around;
+  color: $white;
+  align-content: space-around;
+  margin: 0;
+  padding:0;
+}
+
+@media only screen and (max-width: 850px) {
+  .index-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

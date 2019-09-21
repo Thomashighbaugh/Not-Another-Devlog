@@ -1,12 +1,10 @@
 // this file is intended to package together the partials for application to the site directly
 
-
 //Note: for developer ease of maintaining this stylesheet is kept in alphabetical order though due to script like reading of these files
 //changing the order may change some styles. Proceed with caution
 
 @import "./partials/_404.scss";
 @import "./partials/_base.scss";
-@import "./partials/_blog-post.scss";
 @import "./partials/_body.scss";
 @import "./partials/_codeblock.scss";
 @import "./partials/_footer.scss";
@@ -15,10 +13,9 @@
 @import "./partials/_images.scss";
 @import "./partials/_links.scss";
 @import "./partials/_list.scss";
-@import "./partials/_page.scss";
+@import "./partials/_index.scss";
 @import "./partials/_post.scss";
 @import "./partials/_sidebar.scss";
 @import "./partials/_tags.scss";
 @import "./partials/_text.scss";
 @import "./partials/_title.scss";
-

@@ -40,19 +40,15 @@ const BlogPost = props => {
     <Layout>
       <SEO title={post.frontmatter.title} />
       <div className="post-page-main">
-        <div className="sidebar px-4 py-2">
-          <Sidebar />
-        </div>
-
-        <div className="post-main">
-          <SEO title={post.frontmatter.title} />
-          <div className="mt-3">
-            <h2 className="heading">{post.frontmatter.title}</h2>
-            <div className="d-block">{getTechTags(tags)}</div>
-            <br />
+          <Sidebar/>
+          <div className="post-main">
             <small>
-              <i>Published on </i> {post.frontmatter.date}
-            </small>
+              <h1>{post.frontmatter.title}</h1>
+            <SEO title={post.frontmatter.title} />
+          <div className="d-block">{getTechTags(tags)}</div>
+          <i>Published on </i> {post.frontmatter.date}
+          </small>
+          <br/>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
             <ShareBlock
               title={post.frontmatter.title}
@@ -61,7 +57,6 @@ const BlogPost = props => {
             />
           </div>
         </div>
-      </div>
     </Layout>
   )
 }

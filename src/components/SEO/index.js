@@ -48,11 +48,11 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:type`,
-          content: `website`,
+          content: `A developer blog by Thomas Leon Highbaugh about web development and using Linux as a daily OS`,
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `A developer blog by Thomas Leon Highbaugh about web development and using Linux as a daily OS`,
         },
         {
           name: `twitter:creator`,
@@ -73,8 +73,8 @@ function SEO({ description, lang, meta, title }) {
 
 SEO.defaultProps = {
   lang: `en`,
-  meta: [],
-  description: ``,
+  meta: [ ],
+  description: `A developer blog by Thomas Leon Highbaugh about web development and using Linux as a daily OS`,
 }
 
 SEO.propTypes = {

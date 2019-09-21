@@ -1,11 +1,13 @@
 //this is for styling the footer
-@import './_base.scss';
+@import "./_base.scss";
 
-footer{
-  background: $secondary-light;
-margin-bottom: 0;
-  margin-left:0;
-  margin-right:0;
-padding:0;
-  width:100% !important;
+footer {
+  width: 100% !important;
+  background: $secondary;
+    position: static !important;
+  text-align: center !important;
+  align-items: center !important;
+  align-content: center !important;
+  border-top: solid $primary 0.5rem;
+
 }

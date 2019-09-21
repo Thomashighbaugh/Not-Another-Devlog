@@ -1,12 +1,12 @@
 "use strict"
 
 module.exports = {
-  url: "https://developer-diary.netlify.com",
+  url: "https://not-another-devlog.netlify.com",
   title: "Not Another Devlog?!",
   tagline: "Honest Opinions From An Autodidactic Web Developer",
   copyright: '© 2019 [TLH], All rights reserved',
   author: {
-    name: "[T L H]",
+    name: "Thomas Leon Highbaugh",
     bio: "Autodidactic Web Developer & Linux Madman",
     contacts: {
       linkedin: "https://www.linkedin.com/in/thomas-leon-highbaugh",
@@ -93,14 +93,14 @@ module.exports = {
       tech: "Linux",
       name: "DiLinux",
       size: 20,
-      color: "white",
+      color: "primary",
     },
     {
       tag: "spacemacs",
       tech: "SpaceMacs",
       name: "DiVim",
       size: 20,
-      color: "purple",
+      color: "violet",
     },
   ],
 }

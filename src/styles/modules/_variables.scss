@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css?family=Dokdo|Overpass+Mono|Permanent+Marker|Rock+Salt|Share+Tech+Mono|Space+Mono|VT323&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Aldrich&display=swap');
 
-//Colors
+// Monochrome Colors
 $white: #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
@@ -17,13 +17,13 @@ $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #000 !default;
-
-$blue: #03a9f4 !default;
-$indigo: #3f51b5 !default;
-$purple: #673ab7 !default;
-$pink: #e91e63 !default;
-$red: #f44336 !default;
-$orange: #ff5722 !default;
+// Colors
+$blue: #6196cc !default;
+$indigo: #3f51bf !default;
+$purple: #9063ec !default;
+$pink: #ff9cff !default;
+$red: #e2777a !default;
+$orange: #f8c555 !default;
 $yellow: #ffab00 !default;
 $green: #8bc34a !default;
 $teal: #009688 !default;
@@ -40,19 +40,12 @@ $header-background: #343a40;
 $gradient: linear-gradient(
   -35deg,
   $primary 05%,
-  $primary-light 35%,
+  $secondary 35%,
   $primary 55%,
-  $primary-light 65%,
+  $secondary 65%,
   $primary 75%
 );
-$gradient0: linear-gradient(
-  -35deg,
-  $secondary 05%,
-  $secondary-light 35%,
-  $secondary 55%,
-  $secondary-light 65%,
-  $secondary 75%
-);
+
 
 // Font
 $font: 'Aldrich', 'Share Tech Mono', 'VT323', 'Overpass Mono', 'Space Mono',

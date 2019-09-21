@@ -1,37 +1,19 @@
 //This styles the side bar that takes the place of a more traditional navigation bar at the top
 // used because it includes more space for various things like links (may use on the portfolio)
-@import './_base.scss';
-.sidebar-main {
-  background:$secondary-light;
-  padding:1rem;
-  color:$primary-light !important;
-  margin-left:0;
-  margin-right: 1rem;
+@import "./_base.scss";
+
+.sidebar {
+  .page-links {
+    margin-top: 3rem;
+    padding-top: 4rem;
+  }
+
+  .profile-img {
+    border-radius: 25%;
+    box-shadow: 1px 1px 3px;
+  }
+
+  .author-bio {
+    font-size: 2vw;
+  }
 }
-
-.side-social-links {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.page-links {
-  margin-top: 3rem;
-  padding-top: 4rem;
-  font-family: $font;
-}
-
-
-.profile-img {
-  border-radius: 25%;
-  box-shadow: 1px 1px 3px;
-}
-
-small, h3, p {
-  font-family: $font-family-monospace;
-
-}
-
-.author-bio {
-  font-size: 2vw;
-}
-

@@ -1,6 +1,6 @@
 ---
 title: "Down Into the Dotfile Rabbithole"
-tags: ["linux""]
+tags: ["linux"]
 published: true
 date: "2019-09-05"
 ---
@@ -11,8 +11,19 @@ aspects of my OS as I dug around at its center, eventually learning to script ou
 entire installation to restore my workstation after any one of my many experiments ended in 
 tragedy. Then I found dotfiles and tiling window managers and fell right into the void. 
 
-# Down Into the Dotfile Rabbithole
 ![Where's Linus?](Linux-Sees-You.jpg)
+
+## Introduction
+One of the strengths of using Linux as a full time OS is that it offers control over one's
+system that enables the user to fully control as much of their desktop experience as they 
+want, if they even want one. It also encourages exploration that often leads to the user breaking
+their system while experimenting, which teaches the user a lot but can mean many tedious reinstalls.
+
+To make the reinstallation process easier on myself, I have written a few bash scripts and now even
+an Ansible playbook that streamlines the process of getting a system ready for me rather quickly 
+and without needing to remember all those package names. But what about your preferences and 
+configurations?
+**That's where dotfiles come in**
 
 ## Dotfiles
 Because no one would ever want to read the exact evolution of Linux use I went through,
@@ -103,7 +114,7 @@ what you find comfortable will obviously be different.
 > The above is TMUX displaying within the Kitty Terminal Emulator. Both are styled and configured by 
 > dotfiles stored in my Dotfiles Github Repo. 
 
-![Screenshot of the i3wm with Spotify and pcmanfm open](Selection_010.png)
+![Screenshot of the i3wm with Spotify and pcmanfm open](../workflow-tiling-window-managers/Selection_010.png)
 > Using i3gaps, I have moved to using titling window managers recently. Also styled by dots!
 
 ![My toolbar](Selection_004.png)

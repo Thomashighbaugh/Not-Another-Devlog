@@ -9,16 +9,16 @@ import { Link } from 'gatsby'
 const SocialLinks = ({ contacts }) => {
     return (
         <div className="social-links float-right mr-4">
-            <a className="text-primary ml-4"
+            <a className="ml-4"
                 href={contacts.portfolio}>
-                <Link title="GitHub" to="/">
-                    <FaHome size={40} style={{ color: "#8D4DFF" }} />
+                <Link title="Home" to="/">
+                    <FaHome size={40} />
                 </Link>
             </a>
-            <a className="text-info ml-4"
+            <a className="ml-4"
                 href={contacts.twitter}>
-                <Link to="/archive" title="Twitter">
-                    <FaBlog size={40} style={{ color: "#8D4DFF" }} />
+                <Link to="/archive" title="Blog Archive">
+                    <FaBlog size={40}/>
                 </Link>
             </a>
         </div>

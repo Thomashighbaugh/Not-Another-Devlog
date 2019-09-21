@@ -1,78 +1,49 @@
 //this is for styling the Header/Navbar which includes icons linking to various sites where I have a presence
 
-@import '../../styles/partials/base.scss';
+@import "../../styles/partials/base.scss";
 
 // Styling for the Header element
-header{
+header {
   background: $header-background;
-  border-bottom: 1rem solid $primary-light;
-}
-.head-main {
-  width: 100%;
-  position: sticky;
-  z-index: 1;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  background:$secondary-light;
+  border-bottom: 0.5rem solid $primary-light;
+  padding: 1rem;
+  position: relative;
+  display: inline-block;
+  background: $secondary-light;
+    .head-elements {
+      top: 0;
+      display: inline-block;
 
-}
+    }
+  .mobile-pages-main {
+    width: 100%;
+    background: white;
+    display: none;
+  }
+  .mobile-bio-main {
+    background: white;
+    display: none;
+    max-width: 75px;
+    max-height: 75px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px;
+  }
 
-.head-elements {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.social-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-
-.bottom-bar {
-  width: 100%;
-  background: $secondary-light !important;
-  display: none;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.mobile-pages-main {
-  width: 100%;
-  background: white;
-  display: none;
-}
-.head-logo {
-  font-family: $title-font;
-  font-size: 2.5rem;
-
-}
-
-small {
-  font-family: "VT323", monospace;
-}
-
-.mobile-bio-main {
-  background: white;
-  display: none;
-  max-width: 75px;
-  max-height: 75px;
-  border-radius: 50%;
-  box-shadow: 1px 1px 3px;
-}
-
-
-
-@media only screen and (max-width: 850px) {
-  .bottom-bar{display: flex;}
-  .social-links{display: none;}
-  .mobile-pages-main{display: block;}
-  .mobile-bio-main{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  @media only screen and (max-width: 850px) {
+    .bottom-bar {
+      display: flex;
+    }
+    .social-links {
+      display: inline-block;
+      width: 100%;
+    }
+    .mobile-pages-main {
+      display: block;
+    }
+    .mobile-bio-main {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 }
-
-
