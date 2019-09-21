@@ -1,6 +1,7 @@
-"use strict"
+"use strict";
 
 module.exports = {
+  siteUrl: "https://not-another-devlog.netlify.com",
   url: "https://not-another-devlog.netlify.com",
   title: "Not Another Devlog?!",
   tagline: "Honest Opinions From An Autodidactic Web Developer",

@@ -9,7 +9,10 @@ header {
   padding: 1rem;
   position: relative;
   display: inline-block;
-  background: $secondary-light;
+  background: $secondary;
+  .header-title{
+    font-size: 2.4rem;
+  }
     .head-elements {
       top: 0;
       display: inline-block;

@@ -9,9 +9,9 @@ const Header = ({ siteTitle, author, contacts }) => {
   return (
     <header>
       <div className="head-elements">
-        <h2 className="ml-5">
+        <h3 className="ml-5 header-title">
           <Link to="/">{siteTitle}</Link>
-        </h2>
+        </h3>
       </div>
       <SocialLinks contacts={contacts} />
       <MobilePageLinks />

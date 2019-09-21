@@ -37,7 +37,7 @@ exports.createPages = ({ graphql, actions }) => {
         posts.forEach(({ node }) => {
           createPage({
             path: node.fields.slug,
-            component: path.resolve(`./src/templates/blog-post.js`),
+            component: path.resolve(`./src/templates/blog-post.jsx`),
             context: {
               // Data passed to context is available
               // in page queries as GraphQL variables.
@@ -62,20 +62,20 @@ exports.createPages = ({ graphql, actions }) => {
         tags.forEach(tag => {
           createPage({
             path: `/tags/${_.kebabCase(tag)}/`,
-            component: path.resolve("src/templates/tag.js"),
+            component: path.resolve("src/templates/tag.jsx"),
             context: {
               tag,
             },
           })
         })
 
-        const postsPerPage = 3
+        const postsPerPage = 5
         const numPages = Math.ceil(posts.length / postsPerPage)
 
         Array.from({ length: numPages }).forEach((_, i) => {
           createPage({
             path: i === 0 ? `/` : `/${i+1}`,
-            component: path.resolve("./src/templates/post-list.js"),
+            component: path.resolve("./src/templates/post-list.jsx"),
             context: {
               limit: postsPerPage,
               skip: i*postsPerPage, 
