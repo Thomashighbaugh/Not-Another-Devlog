@@ -1,11 +1,11 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import "bootstrap/dist/css/bootstrap.css"
-
 import Index from "../components/Layout"
 import SEO from "../components/SEO"
 import Sidebar from "../components/Sidebar"
 import TechTag from "../components/Tags/TechTag"
+import { Container } from "react-bootstrap"
 
 const IndexPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges
@@ -45,12 +45,13 @@ const IndexPage = ({ data }) => {
           `web development`,
           `blog`,
           `graphql`,
+          `linux`,
+          `dotfiles`,
         ]}
       />
-      <div className="index-main">
-        <div className="sidebar px-4 py-2">
-          <Sidebar />
-        </div>
+      <Container fluid className="index-main">
+          <Sidebar
+          />
         <div className="post-list-main">
           {posts.map(post => {
             const tags = post.node.frontmatter.tags
@@ -76,7 +77,7 @@ const IndexPage = ({ data }) => {
             </Link>
           </div>
         </div>
-      </div>
+      </Container>
     </Index>
   )
 }

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
-
+import './styles.scss'
 import { FaTwitter, FaLinkedin, FaFacebook, FaEnvelope } from "react-icons/fa"
 import { ShareBlockStandard, ShareButtonIconOnly } from "react-custom-share"
 
@@ -20,10 +20,10 @@ const ShareBlock = props => {
     longtext: siteName,
   }
   return (
-    <div className="mt-4">
+    <div className="mt-4 share-block">
       <ShareBlockStandard {...shareBlockProps} />
       <p className="text-center">
-        <i>If you like it, share it!</i>
+        <i> [ shares appreciated ]  </i>
       </p>
     </div>
   )

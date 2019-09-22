@@ -2,16 +2,15 @@ import React from "react"
 import Index from "../components/Layout"
 import SEO from "../components/SEO"
 import { FaCheckCircle } from "react-icons/fa"
-
 import Sidebar from "../components/Sidebar"
 import TechTag from "../components/Tags/TechTag"
 
-const AboutPage = props => {
+const About = props => {
   return (
     <Index>
       <SEO title="About" />
       <div className="post-page-main">
-        <div className="sidebar px-4 py-2">
+        <div className="sidebar">
           <Sidebar />
         </div>
 
@@ -107,4 +106,4 @@ const AboutPage = props => {
   )
 }
 
-export default AboutPage
+export default About

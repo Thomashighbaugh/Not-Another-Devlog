@@ -1,37 +1,47 @@
 import React from "react"
-import {
-  FaLinkedin,
-  FaGithubSquare,
-  FaDribbble,
-  FaTwitterSquare,
-} from "react-icons/fa"
+import { FaIgloo, FaPenAlt, FaSave } from "react-icons/fa"
+import Button from "react-bootstrap/Button"
+import { Link } from "gatsby"
+import PropTypes from "prop-types"
 
-const SocialLinks = ({ contacts }) => {
+const SocialLinks = ({ siteTitle }) => {
   return (
-    <div className="side-social-links float-left">
-      <button className="text-secondary p-2" href={contacts.linkedin}>
-        <span title="Linked In">
-          <FaLinkedin size={26} style={{ color: "secondary" }} />
-        </span>
-      </button>
-      <button className="text-secondary p-2" href={contacts.github}>
-        <span title="GitHub">
-          <FaGithubSquare size={26} style={{ color: "secondary" }} />
-        </span>
-      </button>
-      <button className="text-secondary p-2" href={contacts.dribbble}>
-        <span title="freeCodeCamp">
-          <FaDribbble size={26} style={{ color: "secondary" }} />
-        </span>
-      </button>
-      <button className="text-secondary p-2" href={contacts.twitter}>
-        <span title="Twitter">
-          <FaTwitterSquare size={26} style={{ color: "secondary" }} />
-        </span>
-      </button>
-      <hr  />
+    <div className="float-left">
+      <Link to="/">{siteTitle}</Link>
+      <hr />
+      <Button>
+        <Link to="/">
+          <span title="Home">
+            <FaIgloo size={60} />
+            <br />
+            Home
+          </span>
+        </Link>
+      </Button>
+      <Button>
+        <Link to="/about">
+          <span title="About">
+            <FaPenAlt size={60} />
+            <br />
+            About
+          </span>
+        </Link>
+      </Button>
+      <Button>
+        <Link to="/archive">
+          <span title="Archive">
+            <FaSave size={60} />
+            <br />
+            Archive
+          </span>
+        </Link>
+      </Button>
+      <hr />
     </div>
   )
+}
+SocialLinks.propTypes = {
+  siteTitle: PropTypes.string,
 }
 
 export default SocialLinks

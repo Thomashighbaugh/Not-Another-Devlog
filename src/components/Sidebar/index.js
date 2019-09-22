@@ -1,9 +1,10 @@
 import React from "react"
-import { StaticQuery, graphql, Link } from "gatsby"
-import Bio from "./Bio/Bio"
+import { StaticQuery, graphql } from "gatsby"
 import SocialLinks from "./SocialLinks"
 import Container from "react-bootstrap/Container"
+import PropTypes from "prop-types"
 
+import "./styles.scss"
 const Sidebar = () => {
   return (
     <StaticQuery
@@ -44,26 +45,18 @@ const Sidebar = () => {
       `}
       render={data => (
         <div className="sidebar">
-          <Bio
-            author={data.site.siteMetadata.author}
-            tagline={data.site.siteMetadata.tagline}
-          />
-          <SocialLinks contacts={data.site.siteMetadata.contacts} />
-          <Container className="links">
-            <Link to="/">
-              <span className="text-dark d-block py-1">Home</span>
-            </Link>
-            <Link to="/about">
-              <span className="text-dark d-block py-1">About</span>
-            </Link>
-            <Link to="/archive">
-              <span className="text-dark d-block py-1">Archive</span>
-            </Link>
+          <Container fluid>
+            <SocialLinks
+              siteTitle={data.siteMetadata.title}
+              contacts={data.siteMetadata.contacts}
+            />
           </Container>
         </div>
       )}
     />
   )
 }
-
+Sidebar.propTypes = {
+  siteTitle: PropTypes.string,
+}
 export default Sidebar

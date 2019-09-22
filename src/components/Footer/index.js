@@ -1,5 +1,5 @@
 import React from "react"
-
+import './styles.scss';
 const Footer = ({ author, tagline }) => {
   return (
     <footer className="col-12 text-center ml-0 mr-o p-0">

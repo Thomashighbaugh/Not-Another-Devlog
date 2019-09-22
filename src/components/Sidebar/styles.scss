@@ -1,0 +1,51 @@
+//This styles the side bar that takes the place of a more traditional navigation bar at the top
+// used because it includes more space for various things like links (may use on the portfolio)
+@import "../../styles/partials/_base.scss";
+
+.sidebar {
+  hr {
+    height: 0.5rem;
+  }
+  }
+  .profile-img {
+    border-radius: 25%;
+    box-shadow: 1px 1px 3px;
+  }
+
+  .author-bio {
+    font-family: "VT323", monospace;
+    font-size: 2rem;
+  }
+
+button{
+  background: $secondary !important;
+  color: $primary !important;
+  border: 0.1rem solid $primary !important;
+  width: 100%;
+  span{
+    color: $primary ;
+    background: $secondary ;
+  }
+  a{
+    color: $primary ;
+    background: $secondary ;
+  }
+}
+button:hover{
+  color: $secondary !important;
+  background: $primary !important;
+  border: 0.1rem solid $secondary !important;
+span{
+  color: $secondary !important;
+  background: $primary !important;
+}
+  a{
+    color: $secondary !important;
+    background: $primary !important;
+  }
+}
+
+button:visited{
+  background: $secondary;
+  color: $primary;
+}
