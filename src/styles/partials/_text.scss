@@ -20,3 +20,57 @@ td {
   padding: 0.25rem;
 }
 
+//This styles the heading elements used in the site generally. Other partials may contain styling for their specific headings
+@import "./_base.scss";
+h1 {
+  font-size: 6rem;
+  @extend %title;
+  border-bottom: 0.5rem solid $primary;
+  border-top: 0.5rem solid $primary;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+h2 {
+  font-size: 4rem;
+  border-bottom: $primary 0.25rem solid;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  @extend %title;
+}
+h3 {
+  font-size: 3rem;
+  @extend %title;
+}
+h4 {
+  font-size: 2rem;
+
+  @extend %title;
+}
+h5 {
+  @extend %title;
+  font-size: 2rem;
+}
+h6 {
+  font-size: 1.25rem;
+
+  @extend %title;
+}
+hgroup {
+  @extend %title;
+}
+a{
+  @extend %link0;
+}
+a:visited{
+  @extend %link0;
+}
+a:hover{
+  @extend %link0;
+}
+a:active{
+  @extend %link;
+}
+.read-more{
+  padding: 0.751rem;
+  color: $primary
+}

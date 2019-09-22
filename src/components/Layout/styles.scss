@@ -8,19 +8,17 @@
   background: $secondary-light;
   padding: 1rem;
   .post-main {
-    padding: 1rem;
+    margin: 3%;
     color: $white;
     background: $secondary-light;
+    justify-content: space-around;
+
   }
 
-  .post-page-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
 }
 .index-main {
-  display: inline-flex;
+  margin: 1%;
+  display: flex;
   width: 100%;
   border: 1rem double $primary;
   background: $secondary-light;
@@ -28,8 +26,10 @@
   justify-content: space-around;
   color: $white;
   align-content: space-around;
-  margin: 0;
   padding: 0;
+  a{
+    @extend %link;
+  }
 }
 
 @media only screen and (max-width: 850px) {
@@ -42,13 +42,10 @@
 
 .info {
   padding-bottom: 1.3rem;
-  border: 0.125rem solid $gray-200;
+  border: 0.125rem solid $gray-700;
   display: inline-block;
   margin: 0;
 
-  h2 {
-    letter-spacing: -0.5px;
-  }
 
   time {
     color: $gray-500;
@@ -57,17 +54,12 @@
   }
 }
 .post-page-main {
-  display: inline-flex;
+  display: flex;
+  margin: 3%;
   flex-direction: row;
+  border: $primary 1rem double;
   background: $secondary;
   padding: 2rem;
-  border: $primary solid 0.25rem;
-  .sidebar {
-    margin-right: 8%;
-    img {
-      margin: 15%;
-    }
-  }
 }
 .content {
   background: $secondary-light;
@@ -83,4 +75,9 @@
       word-break: break-word;
     }
   }
+}
+.post-list-main{
+  margin: 3%;
+  padding:0;
+  font-size: 1.25rem;
 }
