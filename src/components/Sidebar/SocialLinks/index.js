@@ -2,12 +2,12 @@ import React from "react"
 import { FaIgloo, FaPenAlt, FaSave } from "react-icons/fa"
 import Button from "react-bootstrap/Button"
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
+import { Container } from "react-bootstrap"
 
 const SocialLinks = ({ siteTitle }) => {
   return (
     <div className="float-left">
-      <Link to="/">{siteTitle}</Link>
+      <h1 className="navbar-brand">Not <br/>Another <br/>Devlog</h1>
       <hr />
       <Button>
         <Link to="/">
@@ -37,11 +37,27 @@ const SocialLinks = ({ siteTitle }) => {
         </Link>
       </Button>
       <hr />
+      <br/>
+      <Container className="text-center text-muted">
+      <p className="d-inline">
+        © {new Date().getFullYear()}{" "}
+        <a href="https://thomasleonhighbaugh.me">
+          [ tlh ]
+        </a>
+        , All Rights Reserved.
+      </p>
+    <p className="d-inline">
+    <i className="d-block">
+  This site was built with
+  <a href="https://www.gatsbyjs.org">
+    GatsbyJS
+  </a>
+  </i>
+    </p>
+      </Container>
     </div>
   )
 }
-SocialLinks.propTypes = {
-  siteTitle: PropTypes.string,
-}
+
 
 export default SocialLinks

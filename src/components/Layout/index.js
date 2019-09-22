@@ -27,7 +27,6 @@ const Layout = ({ children }) => {
       render={data => (
         <div className="body">
                  <main className="p-5">{children}</main>
-          <Footer />
         </div>
       )}
     />

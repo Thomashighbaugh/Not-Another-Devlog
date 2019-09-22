@@ -4,7 +4,7 @@
 
 @import url("https://fonts.googleapis.com/css?family=Dokdo|Overpass+Mono|Permanent+Marker|Rock+Salt|Share+Tech+Mono|Space+Mono|VT323&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Aldrich&display=swap");
-
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text&display=swap');
 // Monochrome Colors
 $white: #fff !default;
 $gray-100: #f8f9fa !default;
@@ -47,8 +47,8 @@ $gradient: linear-gradient(
 // Font
 $font: "Aldrich", "Share Tech Mono", "VT323", "Overpass Mono", "Space Mono",
   monospace;
-$title-font: "VT323", "Major Mono Display", monospace;
 $font-family-monospace: "Space Mono", monospace !default;
+$title-font: "Libre Barcode 39 Text", monospace;
 
 // Headings
 

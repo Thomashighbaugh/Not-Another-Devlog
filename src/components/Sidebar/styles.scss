@@ -3,6 +3,14 @@
 @import "../../styles/partials/_base.scss";
 
 .sidebar {
+  width:25%;
+  margin: 3%;
+  h1{
+    font-family: $title-font;
+    margin-top: 2rem;
+    width: 100%;
+    font-size: 4rem;
+  }
   hr {
     height: 0.5rem;
   }

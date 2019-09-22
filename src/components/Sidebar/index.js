@@ -2,7 +2,6 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import SocialLinks from "./SocialLinks"
 import Container from "react-bootstrap/Container"
-import PropTypes from "prop-types"
 
 import "./styles.scss"
 const Sidebar = () => {
@@ -47,8 +46,6 @@ const Sidebar = () => {
         <div className="sidebar">
           <Container fluid>
             <SocialLinks
-              siteTitle={data.siteMetadata.title}
-              contacts={data.siteMetadata.contacts}
             />
           </Container>
         </div>
@@ -56,7 +53,5 @@ const Sidebar = () => {
     />
   )
 }
-Sidebar.propTypes = {
-  siteTitle: PropTypes.string,
-}
+
 export default Sidebar
