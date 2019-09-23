@@ -3,7 +3,7 @@
 /************************************
 * Layout
 ************************************/
-@mixin layout{
+@mixin layout {
   display: block;
   background: $secondary;
   padding: 0;
@@ -71,8 +71,7 @@
   text-align: center;
 }
 
-
-@mixin page{
+@mixin page {
   display: flex;
   flex-direction: row;
   border: $primary 1rem double;

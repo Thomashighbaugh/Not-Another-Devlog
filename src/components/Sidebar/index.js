@@ -1,9 +1,10 @@
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { graphql, StaticQuery } from "gatsby"
 import SocialLinks from "./SocialLinks"
 import Container from "react-bootstrap/Container"
 
 import "./styles.scss"
+
 const Sidebar = () => {
   return (
     <StaticQuery
@@ -45,8 +46,7 @@ const Sidebar = () => {
       render={data => (
         <div className="sidebar">
           <Container fluid>
-            <SocialLinks
-            />
+            <SocialLinks />
           </Container>
         </div>
       )}

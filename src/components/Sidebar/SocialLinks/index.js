@@ -7,7 +7,11 @@ import { Container } from "react-bootstrap"
 const SocialLinks = ({ siteTitle }) => {
   return (
     <div className="float-left">
-      <h1 className="navbar-brand">Not <br/>Another <br/>Devlog</h1>
+      <h1 className="navbar-brand">
+        Not <br />
+        Another <br />
+        Devlog
+      </h1>
       <hr />
       <Button>
         <Link to="/">
@@ -37,27 +41,22 @@ const SocialLinks = ({ siteTitle }) => {
         </Link>
       </Button>
       <hr />
-      <br/>
+      <br />
       <Container className="text-center text-muted">
-      <p className="d-inline">
-        © {new Date().getFullYear()}{" "}
-        <a href="https://thomasleonhighbaugh.me">
-          [ tlh ]
-        </a>
-        , All Rights Reserved.
-      </p>
-    <p className="d-inline">
-    <i className="d-block">
-  This site was built with
-  <a href="https://www.gatsbyjs.org">
-    GatsbyJS
-  </a>
-  </i>
-    </p>
+        <p className="d-inline">
+          © {new Date().getFullYear()}{" "}
+          <a href="https://thomasleonhighbaugh.me">[ tlh ]</a>, All Rights
+          Reserved.
+        </p>
+        <p className="d-inline">
+          <i className="d-block">
+            This site was built with
+            <a href="https://www.gatsbyjs.org">GatsbyJS</a>
+          </i>
+        </p>
       </Container>
     </div>
   )
 }
-
 
 export default SocialLinks

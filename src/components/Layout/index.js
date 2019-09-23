@@ -1,8 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
+import { graphql, StaticQuery } from "gatsby"
 import "bootstrap/dist/css/bootstrap.css"
-import './styles.scss';
+import "./styles.scss"
+
 const Layout = ({ children }) => {
   return (
     <StaticQuery
@@ -24,7 +25,7 @@ const Layout = ({ children }) => {
       `}
       render={data => (
         <div className="body">
-                 <main className="p-5">{children}</main>
+          <main className="p-5">{children}</main>
         </div>
       )}
     />

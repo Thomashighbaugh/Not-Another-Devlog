@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import "bootstrap/dist/css/bootstrap.css"
 import Index from "../components/Layout"
 import SEO from "../components/SEO"
@@ -50,8 +50,7 @@ const IndexPage = ({ data }) => {
         ]}
       />
       <Container fluid className="index-main">
-          <Sidebar
-          />
+        <Sidebar />
         <div className="post-list-main">
           {posts.map(post => {
             const tags = post.node.frontmatter.tags
@@ -65,7 +64,10 @@ const IndexPage = ({ data }) => {
                 </small>
                 <p className="mt-2 d-inline">{post.node.excerpt}</p>
                 <Link to={post.node.fields.slug} className="text-primary">
-                  <small className="d-block read-more ml-2"> Read full post</small>
+                  <small className="d-block read-more ml-2">
+                    {" "}
+                    Read full post
+                  </small>
                 </Link>
                 <div className="d-block">{getTechTags(tags)}</div>
               </div>

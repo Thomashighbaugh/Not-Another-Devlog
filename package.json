@@ -5,7 +5,8 @@
   "version": "0.1.0",
   "author": "willjw3 <https://github.com/willjw3>",
   "dependencies": {
-    "@emotion/core": "^10.0.15",
+    "@emotion/core": "^10.0.17",
+    "@mdx-js/react": "^1.4.5",
     "bootstrap": "^4.3.1",
     "emotion": "^10.0.14",
     "gatsby": "^2.15.20",
@@ -40,7 +41,8 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "react-icons": "^3.7.0",
-    "reactstrap": "^8.0.1"
+    "reactstrap": "^8.0.1",
+    "theme-ui": "^0.2.43"
   },
   "devDependencies": {
     "eslint": "^6.4.0",

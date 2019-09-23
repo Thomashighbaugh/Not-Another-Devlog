@@ -1,11 +1,9 @@
-@import '../../styles/main';
+@import "../../styles/main";
 
-.tech-tag{
+.tech-tag {
   border: $light-gray 0.1rem solid;
   background: $secondary;
   border-radius: 0;
   font-family: $font;
   font-size: 0.85rem;
 }
-
-
