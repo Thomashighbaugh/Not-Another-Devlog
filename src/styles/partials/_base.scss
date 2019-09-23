@@ -11,13 +11,4 @@
 }
 
 // Reassign color vars to semantic color scheme
-$theme-colors: (
-  primary: $primary,
-  secondary: $secondary,
-  success: $green,
-  info: $cyan,
-  warning: $yellow,
-  danger: $red,
-  light: $white,
-  dark: $secondary,
-) !default;
+

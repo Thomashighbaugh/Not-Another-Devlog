@@ -59,5 +59,16 @@ h5 1.5rem 900 '"Space Mono", monospace' 0 0 $primary left,
 h6 1.125rem 900 '"Space Mono", monospace' 0 0 $primary left,
 );
 
+$theme-colors: (
+        primary: $primary,
+        secondary: $secondary,
+        success: $green,
+        info: $cyan,
+        warning: $yellow,
+        danger: $red,
+        light: $white,
+        dark: $secondary,
+) !default;
+
 
 

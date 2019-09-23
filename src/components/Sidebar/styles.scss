@@ -6,16 +6,28 @@
   width:25%;
   margin: 3%;
   h1{
-    font-family: $title-font;
+    font-family: $title-font !important;
     margin-top: 2rem;
     width: 100%;
   }
   hr {
     height: 0.5rem;
   }
+  button{
+    @include button;
+  }
+  button:hover{
+    @include button-hover;
+  }
+  button:active{
+    @include button-hover;
+  }
+  button:visited{
+    @include button
+  }
+  a{
+    @extend %link;
+  }
   }
 
 
-button{
-  @extend %button;
-}

@@ -1,7 +1,7 @@
 import React from "react"
 import * as FontAwesome from "react-icons/fa"
 import * as Devicons from "react-icons/di"
-
+import './styles.scss';
 const TechTag = props => {
   const { tech, name, size, color } = props
   const str = name

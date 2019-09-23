@@ -11,6 +11,18 @@
   text-align: center;
 }
 
+@mixin page{
+  display: flex;
+  flex-direction: row;
+  border: $primary 1rem double;
+  justify-content: space-around;
+  align-content: space-around;
+  background: $secondary;
+  color: $white;
+  margin: 0.5%;
+    width: 100%;
+}
+
 %link {
   color: $primary !important;
   background: $secondary !important;
@@ -27,19 +39,18 @@
     color: $primary !important;
   }
 }
-%button {
+@mixin button {
   background: $secondary !important;
   color: $primary !important;
   border: 0.1rem solid $primary !important;
   width: 33%;
-  margin-left: 1rem;
 
   span {
     color: $primary;
     background: $secondary;
   }
-
-  button:hover {
+}
+  @mixin button-hover {
     color: $secondary !important;
     background: $primary !important;
     border: 0.1rem solid $secondary !important;
@@ -48,19 +59,8 @@
       color: $secondary !important;
       background: $primary !important;
     }
-
-    button:visited {
-      background: $secondary;
-      color: $primary;
-
-      span {
-        color: $primary;
-        background: $secondary;
-      }
-
-    }
   }
-}
+
 
 
 
@@ -98,6 +98,25 @@
       color: nth($value, 7);
       text-align: nth($value, 8);
     }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0 0 1.45rem 1.45rem;
+    list-style-position: outside;
+    list-style-image: none;
+    border: $white 0.125rem solid;
+
+  }
+  ol {
+   @extend ul;
+  }
+  li {
+    margin-bottom: calc(1.45rem / 2);
+    margin-left: 1.45rem;
+    margin-top: calc(1.45rem / 2);
+    padding-left: 0;
+
   }
 }
 

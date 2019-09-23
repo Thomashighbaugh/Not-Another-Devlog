@@ -62,36 +62,12 @@ It turns a portion of the `gatsby build` command's action into a check through t
 from the project (and provides a little dialogue about how much is saved from the stylesheet). This elimination of 
 redundant code from the project also includes the vendor code included in CSS-variants as @include or similar like Bootstrap. 
 
-## Themes and their Application
-Except each site is actually composed of a lot of customizations that 
-clients or the author make on top of the portions that lend to easily being 
-stripped out of the central stylesheet thus there is still something else 
-needed to achieve my goal. 
+## Global Styles in an Atomic World
+`"What about those styles applied globally?"` you may be asking yourself. I thought the same thing until I 
+realized, in the process of trying to consolidate my stylesheets, that you can use the layout, or other general 
+page setting component, stylesheet to apply all the extraneous styles not related to components. 
 
-To address my objections, the first thing that is needed is to create central
-stylesheets that hold the vast majority of the individual customizations of a 
-site there, as a sort of theme. The second part of that is designing the 
-components to respond universally to these themes, and thus can be 'split out' 
-of the whole site including defined variables in the place of what internally will 
-remain imports from the central stylesheet but to use these references **minimally** (to reduce the level of work needed to split them out), 
-**consistently** (to allow for the deletion of the variables if an existing theme is present) 
-and **reasonably** (so others can pick the component or stylesheet up and intuitively grasp the way its working)
+This **doesn't** remove the need for some stylesheet that has values for global variables, mixins and extends. 
+What it does is strips out the component styling and allows your definition of the variables to act as a sort of 
+theme template if broken up correctly. 
 
-### Using Variables in Component Stylesheet
-Thanks to the use of @if in SCSS stylesheets, I can access the central stylesheet (via `styles/main.scss`) that can provide alternative values for the variables by having them declared and an import function or have defaults in the else statement
-```scss
-//within component's styles.scss
-
-$primary:#343a40 !default; 
-h1{
-color: #343a40 !default; 
- //color
-  //font-size
-  @if($font-size != null){
-    font-size: $font-size;  
-  } @else{ 
-    font-size: 4rem;  
-}
-
-}
-```
