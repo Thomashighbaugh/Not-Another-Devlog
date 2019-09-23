@@ -2,7 +2,7 @@
 title: Atomic Design, Purge CSS and Making Standalone Components
 tags: ["react", "scss", "gatsby"]
 published: true
-date: "2019-09-20"
+date: "2019-09-22"
 ---
 As mentioned in briefer format in the post on the site's redesign, I have 
 been toying with the idea of using Atomic Design to create truly 'standalone'

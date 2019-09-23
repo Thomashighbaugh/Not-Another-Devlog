@@ -4,7 +4,7 @@
 @import "../modules/_device.scss";
 @import "../modules/_extend.scss";
 @import "../modules/_variables.scss";
-
+@import '../modules/_mixins.scss';
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
