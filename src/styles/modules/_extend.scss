@@ -3,13 +3,14 @@
 
 @import "variables";
 
-%title {
+@mixin title {
   color: $primary !important;
   font-family: $font;
   font-weight: 900;
   text-rendering: optimizeLegibility;
   text-align: center;
 }
+
 %link {
   color: $primary !important;
   background: $secondary !important;
@@ -85,10 +86,7 @@
     background: $primary;
     border: 1rem solid $primary;
   }
-  .body {
-    color: $white;
-    box-sizing: content-box;
-  }
+
   //renders h1-h6 selectors and then their specific settings individually from _variables.scss ---> $headings
   @each $value in $headings {
     #{nth($value, 1)} {
@@ -103,7 +101,7 @@
   }
 }
 
-%table {
+@mixin table {
   border-collapse: collapse;
   border: $white 0.25rem solid;
   padding: 0.25rem;

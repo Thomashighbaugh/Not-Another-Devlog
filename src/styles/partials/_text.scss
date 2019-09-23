@@ -2,11 +2,11 @@
 
 
 table {
-  @extend %table;
+  @include table;
 }
 
 hgroup {
-  @extend %title;
+  @include title;
 }// calls headings and renders the h1-h6 styles according to its contents
 
 
