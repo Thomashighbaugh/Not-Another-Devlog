@@ -25,11 +25,11 @@
   padding: 0 0 0 2.8em;
   overflow: initial;
 }
-
+blockquote,
 code[class*="language-"],
 pre[class*="language-"] {
   color: #ccc;
-  background: #29292a;
+  background: #29292a !important;
   font-size: 1em;
   text-align: left;
   white-space: pre;
@@ -69,7 +69,7 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: #17161b;
+  color: $light-gray !important;
 }
 
 .token.comment,

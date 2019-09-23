@@ -82,21 +82,10 @@ Thanks to the use of @if in SCSS stylesheets, I can access the central styleshee
 ```scss
 //within component's styles.scss
 
+$primary:#343a40 !default; 
 h1{
- //font-family 
-  @if($font != null) {
-    font-family: $font;
-    } @else{
-      font-family: monospace;
-      }
-
+color: #343a40 !default; 
  //color
-  @if($primary != null) {
-    color: $primary;
-      } @else{
-          color: #9063ec;
-          }
-
   //font-size
   @if($font-size != null){
     font-size: $font-size;  

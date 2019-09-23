@@ -3,34 +3,128 @@
 
 @import "variables";
 
-%button {
-  border: $secondary-light 0.125rem solid;
-  margin-left: 0.5rem;
-}
-%button0 {
-  border: $secondary-light 0.125rem solid;
-  margin-left: 1rem;
-  padding: 0.5rem;
-  background: $gradient;
-}
-%article {
-  background: $secondary;
-  color: $white;
-}
 %title {
-  color: $primary-light !important;
+  color: $primary !important;
   font-family: $font;
   font-weight: 900;
   text-rendering: optimizeLegibility;
   text-align: center;
 }
 %link {
-  color: $primary-light !important;
+  color: $primary !important;
   background: $secondary !important;
+  a:hover {
+    color: $secondary !important;
+    background: $primary !important;
+  }
+  a:active {
+    color: $secondary !important;
+    background: $primary !important;
+  }
+  a:visited {
+    background: $secondary !important;
+    color: $primary !important;
+  }
+}
+%button {
+  background: $secondary !important;
+  color: $primary !important;
+  border: 0.1rem solid $primary !important;
+  width: 33%;
+  margin-left: 1rem;
+
+  span {
+    color: $primary;
+    background: $secondary;
+  }
+
+  button:hover {
+    color: $secondary !important;
+    background: $primary !important;
+    border: 0.1rem solid $secondary !important;
+
+    span {
+      color: $secondary !important;
+      background: $primary !important;
+    }
+
+    button:visited {
+      background: $secondary;
+      color: $primary;
+
+      span {
+        color: $primary;
+        background: $secondary;
+      }
+
+    }
+  }
 }
 
-%link0 {
-  color: $secondary-light !important;
-  background: $primary-light !important;
-  height: inherit;
+
+
+%body {
+  background: $background !important;
+  color: $white;
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  main,
+  menu,
+  nav,
+  section,
+  summary {
+    display: block;
+  }
+  hr {
+    box-sizing: content-box;
+    background: $primary;
+    border: 1rem solid $primary;
+  }
+  .body {
+    color: $white;
+    box-sizing: content-box;
+  }
+  //renders h1-h6 selectors and then their specific settings individually from _variables.scss ---> $headings
+  @each $value in $headings {
+    #{nth($value, 1)} {
+      font-size: nth($value, 2);
+      font-weight: nth($value, 3);
+      font-family: nth($value, 4);
+      padding: nth($value, 5);
+      margin-top: nth($value, 6);
+      color: nth($value, 7);
+      text-align: nth($value, 8);
+    }
+  }
+}
+
+%table {
+  border-collapse: collapse;
+  border: $white 0.25rem solid;
+  padding: 0.25rem;
+
+  th {
+    background: $primary;
+    border: $white 0.25rem solid;
+    padding: 0.25rem;
+  }
+  td {
+    background: $secondary;
+    border: $primary solid 0.125rem !important;
+    padding: 0.25rem;
+  }
+}
+
+@mixin layout{
+  display: block;
+  background: $secondary;
+  padding: 0;
+  margin: 3%;
+  justify-content: space-around;
+  color: $white;
 }

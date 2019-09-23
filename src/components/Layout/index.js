@@ -2,8 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import "bootstrap/dist/css/bootstrap.css"
-import "../../styles/main.scss"
-import Footer from "../Footer"
 import './styles.scss';
 const Layout = ({ children }) => {
   return (

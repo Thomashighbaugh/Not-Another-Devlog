@@ -2,7 +2,7 @@ import React from "react"
 import Index from "../components/Layout"
 import SEO from "../components/SEO"
 import Sidebar from "../components/Sidebar"
-import { CardImg, Container } from "react-bootstrap"
+import { Container } from "react-bootstrap"
 
 const About = props => {
   return (
