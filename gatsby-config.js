@@ -1,37 +1,30 @@
-'use strict';
-
-const siteConfig = require("./config");
-
 module.exports = {
   siteMetadata: {
-    url: siteConfig.url,
-    title: siteConfig.title,
-    tagline: siteConfig.tagline,
-    description: `A blog template for web developers that's ready to go out of the box. Feel free to modify it to your liking.`,
-    author: siteConfig.author.name,
-    contacts: {
-      linkedin: siteConfig.author.contacts.linkedin,
-      github: siteConfig.author.contacts.github,
-      stackoverflow: siteConfig.author.contacts.stackoverflow,
-      freecodecamp: siteConfig.author.contacts.freecodecamp,
-      twitter: siteConfig.author.contacts.twitter,
+    title: `Not Another Devlog?!`,
+    description: `An Opinionated, self educated software engineer and Linux fanatic, with a focus on front end interface design, self-hosted microservices and OS customizations.`,
+    author: `Thomas Leon Highbaugh`,
+    siteUrl: `https://thomasleonhighbaugh.me`,
+    social: {
+      twitter: `tlhighbaugh`,
+      facebook: ``,
+      github: `Thomashighbaugh`,
+      linkedin: `thomas-leon-highbaugh`,
+      email: `thighbaugh@zoho.com`,
     },
-    labels: siteConfig.labels,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/Blog`,
+        path: `${__dirname}/content/blog`,
         name: `blog`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/content/assets`,
+        name: `assets`,
       },
     },
     {
@@ -39,88 +32,38 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-prismjs`,
-            options: {
-              classPrefix: "language-",
-              inlineCodeMarker: '>',
-              aliases: {sh: "bash", js: "javascript"},
-              showLineNumbers: false,
-              noInlineHighlight: false,
-
-              languageExtensions: [
-                {
-                  language: "superscript",
-                  extend: "javascript",
-                  definition: {
-                    superscript_types: /(SuperType)/,
-                  },
-                  insertBefore: {
-                    function: {
-                      superscript_keywords: /(superif|superelse)/,
-                    },
-                  },
-                },
-              ],
-
-              prompt: {
-                user: "root",
-                host: "localhost",
-                global: false,
-              },
-            },
-          },
-          `gatsby-remark-responsive-iframe`,
-          {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 1000,
-              quality: 80,
-              showCaptions: true,
-              linkImagesToOriginal: false
+              maxWidth: 970,
             },
           },
+          `gatsby-remark-prismjs`,
         ],
       },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-catch-links`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        //trackingId: `ADD YOUR TRACKING ID HERE`,
+      },
+    },
+    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Not Another Devlog?!`,
-        short_name: `NAD?!`,
+        name: `flexible-gatsby-starter`,
+        short_name: `flexible-gatsby`,
         start_url: `/`,
-        background_color: `#343a40`,
-        theme_color: `#9063ec`,
+        background_color: `#8265ff`,
+        theme_color: `#8265FF`,
         display: `minimal-ui`,
-        icon: `src/images/favicon-32x32.png`, // This path is relative to the root of the site.
+        icon: `./static/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
      `gatsby-plugin-offline`,
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-netlify`,
-      {
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        printRejected: true, // Print removed selectors and processed file names
-        // develop: true, // Enable while using `gatsby develop`
-        // tailwind: true, // Enable tailwindcss support
-        // whitelist: ['whitelist'], // Don't remove this selector
-        // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
-        // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
-      }
-    },
-    {
-      resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: ['Knewave', 'Space Mono Bold']
-        }
-      }
-    }
   ],
 }

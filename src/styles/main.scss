@@ -1,8 +1,7 @@
-/*
-* Main StyleSheet
-* Purpose: Composes a single file which atomized styles can call the general styles using
-* Thomas Leon Highbaugh 2019
- */
-@import "./partials/_base.scss";
-@import "./partials/_body.scss";
-@import "./partials/_codeblock.scss";
+@import 'helpers/all';
+@import 'base/all';
+@import 'vendors/all';
+@import 'components/all';
+@import 'layout/all';
+@import 'pages/all';
+@import "fonts/all";
