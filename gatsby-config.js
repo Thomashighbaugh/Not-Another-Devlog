@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Not Another Devlog?!`,
-    description: `An Opinionated, self educated software engineer and Linux fanatic, with a focus on front end interface design, self-hosted microservices and OS customizations.`,
+    description: `Not Another Devlog?!`,
     author: `Thomas Leon Highbaugh`,
     siteUrl: `https://thomasleonhighbaugh.me`,
     social: {

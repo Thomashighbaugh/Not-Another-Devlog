@@ -2,7 +2,7 @@ import { Link } from 'gatsby'
 import React from 'react'
 
 import Logo from './pic.png'
-
+// @TODO TODO look up why it won't render the site title but will render pre-existing variables
 const Sidebar = ({ siteMetadata }) => (
   <>
     <aside className="sidebar">
@@ -13,8 +13,8 @@ const Sidebar = ({ siteMetadata }) => (
               <img src={Logo} alt={siteMetadata.author} />
             </Link>
           </div>
-          <div className="author-name">{siteMetadata.author}</div>
-          <p>{siteMetadata.description}</p>
+          <p className="author-name">{siteMetadata.author}</p>
+          <h1 className="site-name">{siteMetadata.description}</h1>
         </div>
       </header>
       <footer>

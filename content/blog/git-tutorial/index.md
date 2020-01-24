@@ -2,7 +2,7 @@
 title: Get the Git
 date: 2020-01-03 00:00:00 +0300
 description: Part of my series on compiling your dotfiles and maintaining them. This part goes into using Git in the basic sense. 
-img: ./software.jpg # Add image post (optional)
+img: ./git.jpg # Add image post (optional)
 tags: [Dotfiles, Git] # add tag
 ---
 How to Use Git and GitHub

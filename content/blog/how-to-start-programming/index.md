@@ -1,6 +1,6 @@
 ---
 title: Dotfile Management
-date: 2017-09-12 00:00:00 +0300
+date: 2020-01-04 00:00:00 +0300
 description: Just like configurations themselves, everyone has there own method of managing dotfiles. Here I describe how I use Makefile to provision mine.
 img: ./how-to-start.jpg # Add image post (optional)
 tags: [Dotfiles, Makefile] # add tag
