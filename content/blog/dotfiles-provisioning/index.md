@@ -1,8 +1,8 @@
 ---
 title: Dotfiles && Provisioning 
-date: 2020-01-5 00:00:00 +0300
+date: 2020-01-11 00:00:00 +0300
 description: Unlike many dotfiles repos, I use my repo to provision my system as well. Here's my logic on that.
-img: ./workflow.jpg # Add image post (optional)
+img: ./ansible.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [Productivity, Dotfiles] # add tag
 ---
@@ -53,7 +53,10 @@ they make it huge in size.
 - .emacs.d (Emacs configuration directory with all its add-ons installed within)
 - GIMP/Inkscape directory (with all the plugins, textures, etc)
 
-You are also wise to avoid including the following as they don't seem to work or reveal personal information
+You are also wise to avoid including the following as they don't seem to work or reveal personal information (luckily not earned in blood)
 - Gnome settings
 - firefox user profiles
-- 
+- passwd files 
+- files containing one's logins in general 
+- visudo files
+- crypto currency wallet ids 

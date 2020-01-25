@@ -1,8 +1,8 @@
 ---
 title: Another's Dotfiles
-date: 2020-01-05 00:00:00 +0300
+date: 2020-01-10 00:00:00 +0300
 description: # Add post description (optional)
-img: ./js-1.png # Add image post (optional)
+img: ./dotfiles.png # Add image post (optional)
 tags: [Dotfiles, Git] # add tag
 ---
 
