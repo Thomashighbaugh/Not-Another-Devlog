@@ -1,11 +1,11 @@
 ---
 title: Get the Git
 date: 2020-01-03 00:00:00 +0300
-description: Part of my series on compiling your dotfiles and maintaining them. This part goes into using Git in the basic sense. 
-img: ./git.jpg # Add image post (optional)
+description: A general guide for using git to backup files, or dotfiles, that started as an explanation for my girlfriend. 
+img: ./gitx.png # Add image post (optional)
 tags: [Dotfiles, Git] # add tag
 ---
-How to Use Git and GitHub
+
 
 Let's say you want to backup your settings (or dotfiles in Linux parlance) on someone else's server as demanded by best practices and better judgement. To do this, you could use one of a million commercial cloud services that all work about the same and are easy enough to use with the GUI but lack the simplicity of a single command line to bring your data to your system and another to provision that data. So there are still innumerable options offering those features, but let's say you aren't seeking to be a super nerd and go with a solution favored by many, using the VCS (Version Control System) called git. 
 

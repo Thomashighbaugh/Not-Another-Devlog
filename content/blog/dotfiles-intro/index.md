@@ -2,7 +2,7 @@
 title: Dotfiles for the Masses
 date: 2020-01-02
 description: # Add post description (optional)
-img: ./dotfiles.png # Add image post (optional)
+img: ./dots.jpg # Add image post (optional)
 tags: [Dotfiles]
 ---
 
