@@ -33,7 +33,7 @@
   "devDependencies": {
     "eslint": "7.18.0",
     "eslint-plugin-react": "7.22.0",
-    "prettier": "1.19.1"
+    "prettier": "2.2.1"
   },
   "homepage": "https://github.com/NickyMeuleman/gatsby-paginated-blog#readme",
   "keywords": [
